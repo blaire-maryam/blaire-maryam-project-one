@@ -13,79 +13,198 @@
       href="https://fonts.googleapis.com/css2?family=Barlow:wght@700&family=Lato&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./styles/style.css" />
     <title>Under-The-Sea</title>
   </head>
   <body>
     <!-- Header of page -->
     <header>
-      <!-- Navigation of site -->
-      <nav>
-        <ul>
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">ABOUT</a></li>
-          <li><a href="#">BLOG</a></li>
-          <li><a href="#">CONTACT</a></li>
-        </ul>
-      </nav>
-      <!--End Of Navigation site -->
-      <!-- Home Page Title -->
-      <h1>UNDER <br />THE <br />SEA</h1>
-      <!-- End Of Home Page Title -->
-      <!-- Home Box Header Img -->
-      <div class="home-box-header-img">
-        <img
-          src="./assets/home-box-header.png"
-          alt="An Image Of Three Gold Fish Under The Sea"
-        />
+      <!-- Header image Overlay -->
+      <div class="overlay">
+        <!-- Navigation of site -->
+        <nav>
+          <ul class="wrapper">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </nav>
+        <!--End Of Navigation site -->
+        <!-- Home Page Title -->
+        <h1 class="wrapper">UNDER <br />THE <br />SEA</h1>
+        <!-- End Of Home Page Title -->
+        <!-- Home Box Header Img -->
+        <div class="home-box-header-img">
+          <img
+            src="./assets/home-box-header.png"
+            alt="An Image Of Three Gold Fish Under The Sea"
+          />
+        </div>
+        <!--End Of Home Box Header Img -->
       </div>
-      <!--End Of Home Box Header Img -->
+      <!-- End Of Header Image Overlay -->
     </header>
     <!--End Of Header page -->
+
     <!-- Main Content Area -->
     <main>
-      <section>
-        <h3>WHAT IS UNDER THE SEA?</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores earum
-          doloremque iste praesentium eius soluta enim illo aspernatur
-          voluptatum animi.Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Voluptatibus maiores esse, saepe earum eum iusto delectus odit
-          necessitatibus accusamus nisi?
-        </p>
-        <button>Find Out More</button>
+      <section class="section-1">
+        <div class="sea-container">
+          <h3>WHAT IS UNDER THE SEA?</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+            earum doloremque iste praesentium eius soluta enim illo aspernatur
+            voluptatum animi.Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Voluptatibus maiores esse, saepe earum eum iusto delectus odit
+            necessitatibus accusamus nisi?
+          </p>
+          <button>Find Out More</button>
+        </div>
       </section>
-      <article>
-        <div>
-          <img src="./assets/left-image.jpg" alt="" />
+      <section class="section-2" id="about">
+        <div class="container">
+          <div class="left-image">
+            <img src="./assets/left-image.jpg" alt="" />
+          </div>
+          <div class="right-content">
+            <h4>NEW ADDITIONS</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+              dolore corrupti optio numquam aut iusto nesciunt ea harum nulla
+              aliquam corporis excepturi qui nostrum asperiores, aspernatur
+              accusamus ducimus, cum doloribus deleniti eos autem quasi, est
+              voluptatibus inventore? Impedit, dolore commodi.
+            </p>
+            <button>Read More</button>
+          </div>
         </div>
-        <div>
-          <h4>NEW ADDITIONS</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dolore
-            corrupti optio numquam aut iusto nesciunt ea harum nulla aliquam
-            corporis excepturi qui nostrum asperiores, aspernatur accusamus
-            ducimus, cum doloribus deleniti eos autem quasi, est voluptatibus
-            inventore? Impedit, dolore commodi.
-          </p>
-          <button>Read More</button>
+      </section>
+      <section class="section-2">
+        <div class="container">
+          <div class="left-content">
+            <h4>MEET REAL NEMO</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+              dolore corrupti optio numquam aut iusto nesciunt ea harum nulla
+              aliquam corporis excepturi qui nostrum asperiores, aspernatur
+              accusamus ducimus, cum doloribus deleniti eos autem quasi, est
+              voluptatibus inventore? Impedit, dolore commodi.
+            </p>
+            <button>Read More</button>
+          </div>
+          <div class="right-image">
+            <img src="./assets/right-image.jpg" alt="" />
+          </div>
         </div>
-      </article>
-      <article>
-        <div>
-          <h4>MEET REAL NEMO</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dolore
-            corrupti optio numquam aut iusto nesciunt ea harum nulla aliquam
-            corporis excepturi qui nostrum asperiores, aspernatur accusamus
-            ducimus, cum doloribus deleniti eos autem quasi, est voluptatibus
-            inventore? Impedit, dolore commodi.
-          </p>
-          <button>Read More</button>
+      </section>
+      <section class="contact-container">
+        <div class="wrapper contact-info">
+          <div class="contact-icons">
+            <div>
+              <a href=""><i class="fas fa-location-arrow"></i></a>
+            </div>
+            <div class="contact-content">
+              <h4>Location</h4>
+              <p>
+                Ut felis eros, vehicula magna nec, laoreet brandit nisi. Fusce
+                auctor erat ac sagittis mattis. Mauris tempus velit sem, sit
+                amet imperdiet dolor placerat et.
+              </p>
+            </div>
+          </div>
+          <div class="contact-icons">
+            <div>
+              <a href=""><i class="fas fa-users"></i></a>
+            </div>
+            <div class="contact-content">
+              <h4>Community</h4>
+              <p>
+                Ut felis eros, vehicula magna nec, laoreet brandit nisi. Fusce
+                auctor erat ac sagittis mattis. Mauris tempus velit sem, sit
+                amet imperdiet dolor placerat et.
+              </p>
+            </div>
+          </div>
+          <div class="contact-icons">
+            <div>
+              <a href=""><i class="fas fa-file"></i></a>
+            </div>
+            <div class="contact-content">
+              <h4>BLOG</h4>
+              <p>
+                Ut felis eros, vehicula magna nec, laoreet brandit nisi. Fusce
+                auctor erat ac sagittis mattis. Mauris tempus velit sem, sit
+                amet imperdiet dolor placerat et.
+              </p>
+            </div>
+          </div>
+          <div class="contact-icons">
+            <div>
+              <a href=""><i class="fas fa-phone"></i></a>
+            </div>
+            <div class="contact-content">
+              <h4>GET IN TOUCH</h4>
+              <p>
+                Ut felis eros, vehicula magna nec, laoreet brandit nisi. Fusce
+                auctor erat ac sagittis mattis. Mauris tempus velit sem, sit
+                amet imperdiet dolor placerat et.
+              </p>
+            </div>
+          </div>
         </div>
-        <div>
-          <img src="./assets/right-image.jpg" alt="" />
+      </section>
+      <section class="whales">
+        <img
+          src="./assets/banner.jpg"
+          alt="Women reaching upto whale inside of the aquarium"
+        />
+      </section>
+      <section class="this-month">
+        <div class="wrapper month-container">
+          <div class="month-image">
+            <img
+              src="./assets/small-box.jpg"
+              alt="An image of small fish up close"
+            />
+          </div>
+          <div class="month-content">
+            <h3>This Month Profile</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+              pulvinar tortor nulla elementum eleifend. Vestibulum consequat
+              vestibulum felis pharetra luctus. Quisque iterdum orci quis
+              convallis dapibus nulla pulvinar tortor. Lorem ipsum dolor sit
+              amet, consectetur adipiscing elit. Nulla pulvinar tortor nulla
+              elementum eleifend. Vestibulum consequat vestibulum felis pharetra
+              luctus. Quisque interdum orci quis convallis
+            </p>
+            <button>Find Out More</button>
+          </div>
         </div>
-      </article>
+      </section>
+      <section class="home-images">
+        <div class="wrapper fish-section">
+          <div>
+            <img
+              src="./assets/gallery-image-1.jpg"
+              alt="Alittle looking at the aquarium"
+            />
+          </div>
+          <div>
+            <img
+              src="./assets/gallery-image-2.jpg"
+              alt="Acrowd of people taking pics of shark of aquarium"
+            />
+          </div>
+          <div>
+            <img src="./assets/gallery-image-3.jpg" alt="Scool of fish" />
+          </div>
+        </div>
+      </section>
+      <footer>
+        <p>Copyright © 2021 Juno College</p>
+      </footer>
     </main>
   </body>
 </html>

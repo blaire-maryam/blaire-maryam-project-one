@@ -1,0 +1,10 @@
+@mixin headingSize($fontFamily, $fontSize, $lineHeight) {
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+}
+@mixin elementSize($fontFamily, $fontSize, $letterSpace) {
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  letter-spacing: $letterSpace;
+}

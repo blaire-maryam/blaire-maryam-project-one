@@ -1,6 +1,62 @@
 header {
-  background-image: url();
+  background-image: url(../assets/header-image.jpg);
   background-position: center center;
   background-size: cover;
   height: calc(100vh - 80px);
+}
+
+.home-box-header-img {
+  position: absolute;
+  bottom: -20%;
+  right: 0;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  height: inherit;
+  padding-left: 10px;
+  height: 100vh;
+}
+
+h1 {
+  @include headingSize($fontBarlow, 138px, 126px);
+  text-transform: uppercase;
+}
+
+h2 {
+  @include headingSize($fontBarlow, 80px, 92px);
+  text-transform: uppercase;
+}
+
+h3 {
+  @include elementSize($fontBarlow, 42px, 1px);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+h4 {
+  @include elementSize($fontBarlow, 32px, 1px);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+nav {
+  @include headingSize($fontBarlow, 20px, 29px);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+button {
+  @include headingSize($fontBarlow, 20px, 32px);
+  letter-spacing: 1px;
+  background-color: $accentColor;
+  padding: 10px 15px;
+  border: none;
+  margin-top: 30px;
+}
+
+body {
+  @include headingSize($fontLato, 20px, 32px);
+  color: white;
 }
