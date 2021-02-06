@@ -1,141 +1,144 @@
-.section-1 {
+//Sea Section
+.sea-section {
   background-color: $primaryColor;
-  padding: 28rem 0 20rem 0;
   height: 100vh;
   text-align: center;
+
+  .sea-container {
+    width: 900px;
+    height: 600px;
+    margin: 0 auto;
+    padding-top: 40vh;
+  }
+
+  .sea-container p {
+    text-align: left;
+  }
 }
 
-.sea-container {
-  width: 900px;
-  height: 600px;
-  margin: 0 auto;
-}
-
-.sea-container p {
-  text-align: left;
-}
-
-// SECTION NUMBER 2
-.section-2 {
+// About Section
+.about-section {
   background-color: $secondaryColor;
   padding: 10rem 0 4rem 0;
+
+  .about-section button {
+    background: $primaryColor;
+    color: $baseFontColor;
+  }
+  .about-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .about-left-image img {
+    box-shadow: 30px 30px $accentColor;
+    position: relative;
+  }
+
+  .about-right-image img {
+    box-shadow: -30px 30px $accentColor;
+    position: relative;
+  }
+
+  .about-left-image img {
+    top: -30%;
+  }
+
+  .about-left-content,
+  .about-right-content {
+    max-width: 600px;
+    width: 100%;
+  }
+
+  .about-left-content {
+    text-align: right;
+  }
+
+  .about-right-content {
+    text-align: left;
+  }
 }
 
-.section-2 button {
-  background: $primaryColor;
-  color: $baseFontColor;
-}
-
-.container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.left-image img {
-  box-shadow: 30px 30px $accentColor;
-  position: relative;
-}
-
-.right-image img {
-  box-shadow: -30px 30px $accentColor;
-  position: relative;
-}
-
-.left-image img {
-  top: -30%;
-}
-
-.left-content,
-.right-content {
-  max-width: 600px;
-  width: 100%;
-}
-
-.left-content {
-  text-align: right;
-}
-
-.right-content {
-  text-align: left;
-}
-
-//Section no 3
+//Contact Section
 
 .contact-container {
   background-color: $primaryColor;
   color: $baseFontColor;
   padding: 15rem 0;
+  .contact-info {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contact-icons {
+    display: flex;
+  }
+  .contact-icons i {
+    background: #86e0f9;
+    color: #0c1423;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 49px;
+    vertical-align: middle;
+    font-size: 1.8rem;
+  }
+
+  .contact-content {
+    max-width: 500px;
+    padding: 0 0 2rem 2rem;
+    margin: 0 auto;
+  }
 }
 
-.contact-info {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.contact-icons {
-  display: flex;
-}
-
-.contact-icons i {
-  background: #86e0f9;
-  color: #0c1423;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 49px;
-  vertical-align: middle;
-  font-size: 1.8rem;
-}
-
-.contact-content {
-  max-width: 500px;
-  padding: 0 0 2rem 2rem;
-  margin: 0 auto;
-}
+// Whale section
 
 .whales img {
   width: 100%;
   display: block;
+  margin-bottom: 50px;
 }
+
+// This Month Container
 
 .this-month {
   background-color: $primaryColor;
   height: 60vh;
-  padding: 7rem 0 4rem 0;
-}
+  padding-top: 5rem;
 
-.month-image img {
-  box-shadow: 30px 30px $accentColor;
-  width: 100%;
-}
-
-.month-container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.month-content {
-  max-width: 800px;
+  .month-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .month-image img {
+    box-shadow: 30px 30px $accentColor;
+    width: 100%;
+  }
+  .month-content {
+    max-width: 800px;
+  }
 }
 
 .home-images {
   background-color: $secondaryColor;
-  height: 70vh;
+  height: 60vh;
   padding: 5rem 0;
-}
 
-.fish-section {
-  display: flex;
-  justify-content: space-between;
-}
+  .fish-section {
+    display: flex;
+    justify-content: space-between;
+  }
 
-.fish-section img {
-  max-width: 800px;
-  width: 400px;
+  .fish-section img {
+    max-width: 800px;
+    width: 400px;
+  }
 }
 
 footer {
+  margin-top: 200px;
   background: $accentColor;
   color: #0c1423;
   text-align: center;
