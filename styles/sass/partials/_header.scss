@@ -60,3 +60,8 @@ body {
   @include headingSize($fontLato, 20px, 32px);
   color: white;
 }
+
+.blog-page {
+  background-image: url(../assets/blog-header.jpg);
+  display: flex;
+}
