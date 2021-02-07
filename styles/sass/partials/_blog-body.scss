@@ -10,10 +10,10 @@ body {
 
 // BLOG POST SECTION
 .blog-post-section {
-  width: 73%;
+  width: 65%;
 
   .blog-post-section img {
-    box-shadow: -40px 40px $accentColor;
+    // box-shadow: -100px 400px $accentColor;
     margin-bottom: 600px;
   }
 
@@ -47,8 +47,9 @@ body {
 }
 
 // SIDE POST SECTION
+
 .side-blog-section {
-  width: 25%;
+  width: 30%;
   margin-top: 100px;
   max-width: 400px;
   width: 100%;
@@ -63,9 +64,57 @@ body {
     top: -10%;
     right: 3%;
     width: 100%;
+    box-shadow: 10px 0 $secondaryColor;
   }
 
-  .side-blog-image-content {
-    padding-top: 350px;
+  .side-blog-content {
+    padding: 370px 0 60px 20px;
+    background-color: $secondaryColor;
+    margin-left: 40px;
+  }
+}
+
+.comments-container {
+  padding: 150px 0;
+  width: 100%;
+
+  .comments-title {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0;
+  }
+
+  .profile-picture {
+    width: 15%;
+  }
+  .comment-content {
+    width: 80%;
+  }
+}
+
+.form-box {
+  max-width: 700px;
+  width: 100%;
+  background-color: $primaryColor;
+  input[type='text'],
+  input[type='email'] {
+    max-width: 40vw;
+    height: 40px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid $accentColor;
+    color: white;
+  }
+  .form-container {
+    display: flex;
+  }
+  .name-form {
+    margin-right: 20px;
+    // width: 600px;
+  }
+
+  .email-form {
+    margin-left: 20px;
   }
 }

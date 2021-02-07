@@ -3,8 +3,30 @@
   font-size: $fontSize;
   line-height: $lineHeight;
 }
+
 @mixin elementSize($fontFamily, $fontSize, $letterSpace) {
   font-family: $fontFamily;
   font-size: $fontSize;
   letter-spacing: $letterSpace;
 }
+
+@mixin tabletMQ {
+  @media (max-width: 1023px) {
+    @content;
+  }
+}
+
+@mixin mobiletMQ {
+  @media (max-width: 640px) {
+    @content;
+  }
+}
+
+// body {
+//   font-size: 62.5%;
+//   @include tabletMQ {
+//     background: blue;
+//   }
+//   @include mobiletMQ {
+//     background: red;
+//   }
