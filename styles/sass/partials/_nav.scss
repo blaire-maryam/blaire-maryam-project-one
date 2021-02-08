@@ -1,9 +1,13 @@
 nav {
   width: 100%;
+  @include mobiletMQ {
+    visibility: hidden;
+  }
 
   ul {
     display: flex;
     justify-content: flex-end;
+    list-style: none;
   }
 
   li {
@@ -12,5 +16,18 @@ nav {
 
   a {
     color: white;
+  }
+
+  .nav-burger-menu i {
+    font-size: 50px;
+  }
+  .nav-burger-menu {
+    padding-top: 20px;
+    padding-left: 20px;
+    visibility: hidden;
+
+    @include mobiletMQ {
+      visibility: visible;
+    }
   }
 }

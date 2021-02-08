@@ -3,14 +3,26 @@
   background-color: $primaryColor;
   height: 100vh;
   text-align: center;
+  @include mobiletMQ {
+    height: 50vh;
+    padding: 0;
+  }
 
   .sea-container {
     width: 900px;
     height: 600px;
     margin: 0 auto;
     padding-top: 40vh;
+    @include tabletMQ {
+      margin-top: 300px;
+    }
+    @include mobiletMQ {
+      max-width: 550px;
+      padding-top: 0;
+      margin-top: 0;
+      padding: 100px 20px;
+    }
   }
-
   .sea-container p {
     text-align: left;
   }
@@ -20,6 +32,9 @@
 .about-section {
   background-color: $secondaryColor;
   padding: 10rem 0 4rem 0;
+  @include tabletMQ {
+    padding-bottom: 3rem;
+  }
 
   .about-section button {
     background: $primaryColor;
@@ -28,34 +43,80 @@
   .about-container {
     display: flex;
     justify-content: space-between;
+    @include tabletMQ {
+      display: block;
+    }
   }
-
+  .left-side {
+    @include tabletMQ {
+      display: flex;
+      flex-wrap: wrap-reverse;
+    }
+  }
   .about-left-image img {
     box-shadow: 30px 30px $accentColor;
     position: relative;
+    @include tabletMQ {
+      box-shadow: none;
+      position: static;
+      margin-left: auto;
+      margin-right: 0;
+      border: 4px solid $accentColor;
+    }
+    @include mobiletMQ {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+  .about-left-image img {
+    top: -30%;
+    @include tabletMQ {
+      top: 0;
+    }
   }
 
   .about-right-image img {
     box-shadow: -30px 30px $accentColor;
     position: relative;
-  }
-
-  .about-left-image img {
-    top: -30%;
+    @include tabletMQ {
+      box-shadow: none;
+      display: block;
+      margin-right: auto;
+      border: 4px solid $accentColor;
+    }
+    @include mobiletMQ {
+      width: 80%;
+      margin: 0 auto;
+    }
   }
 
   .about-left-content,
   .about-right-content {
     max-width: 600px;
     width: 100%;
+    @include tabletMQ {
+      max-width: 100%;
+      margin: 0 50px;
+    }
+    @include mobiletMQ {
+      max-width: 450px;
+      justify-content: center;
+      margin: 0 auto;
+    }
   }
 
   .about-left-content {
     text-align: right;
+    @include mobiletMQ {
+      padding-top: 25px;
+    }
   }
 
   .about-right-content {
     text-align: left;
+    @include mobiletMQ {
+      padding-top: 25px;
+    }
   }
 }
 
@@ -86,9 +147,12 @@
   }
 
   .contact-content {
-    max-width: 500px;
+    max-width: 400px;
     padding: 0 0 2rem 2rem;
     margin: 0 auto;
+    @include tabletMQ {
+      max-width: 800px;
+    }
   }
 }
 
@@ -106,6 +170,9 @@
   background-color: $primaryColor;
   height: 60vh;
   padding-top: 5rem;
+  @include mobiletMQ {
+    height: 50vh;
+  }
 
   .month-container {
     display: flex;
@@ -115,6 +182,9 @@
   .month-image img {
     box-shadow: 30px 30px $accentColor;
     width: 100%;
+    @include tabletMQ {
+      display: none;
+    }
   }
   .month-content {
     max-width: 800px;
@@ -125,6 +195,10 @@
   background-color: $secondaryColor;
   height: 60vh;
   padding: 5rem 0;
+  @include mobiletMQ {
+    height: 40vh;
+    padding: 4rem 0;
+  }
 
   .fish-section {
     display: flex;
@@ -134,6 +208,14 @@
   .fish-section img {
     max-width: 800px;
     width: 400px;
+    @include mobiletMQ {
+      max-width: 90%;
+    }
+  }
+}
+.last-fish {
+  @include tabletMQ {
+    display: none;
   }
 }
 
