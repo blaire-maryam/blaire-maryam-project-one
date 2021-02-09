@@ -7,8 +7,12 @@
     <title>BLOG</title>
   </head>
   <body>
+    <!-- Blog Header Page -->
     <header class="blog-page">
       <!-- Navigation of site -->
+      <div class="nav-burger-menu">
+        <i class="fas fa-bars"></i>
+      </div>
       <nav>
         <ul>
           <li><a href="#">HOME</a></li>
@@ -21,43 +25,22 @@
     </header>
     <!--End Of Blog Header page -->
     <main>
-      <!-- LEFT SECTION -->
-      <div class="container">
-        <section class="side-blog-section">
-          <div class="side-blog-image">
-            <img
-              src="./assets/side-blog-image.jpg"
-              alt="An image of an aquarium containing a large fish"
-            />
-          </div>
-          <div class="side-blog-content wrapper">
-            <h4>ABOUT UNDER THE SEA</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis
-              perspiciatis deserunt accusamus!
-            </p>
-            <h4>RECENT POSTS</h4>
-            <ul>
-              <li>Lorem, ipsum dolor.</li>
-              <li>Lorem, ipsum dolor.</li>
-              <li>Lorem, ipsum dolor.</li>
-              <li>Lorem, ipsum dolor.</li>
-            </ul>
-          </div>
-        </section>
+      <div class="blog-page-container">
         <!-- RIGHT SECTION -->
         <section class="blog-post-section">
-          <div class="blog-img">
+          <div class="right-side">
             <h2>BLOG</h2>
             <img
               src="./assets/blog-post-image.jpg"
-              alt="An image of a School of fish undersea"
+              alt="An image of a School of
+            fish undersea"
+              class="right-side-image"
             />
           </div>
-          <div class="wrapper blog-post-content">
+          <div class="discovery-section">
             <h3>DISCOVERING NEW SPECIES</h3>
             <p>Monday May, 2019 by Dieula</p>
-            <p class="">
+            <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
               odit assumenda corrupti culpa libero nemo voluptate iusto tempore
               enim at? Dignissimos cum maxime ratione eaque cumque enim quae ex
@@ -86,7 +69,33 @@
             </p>
           </div>
         </section>
+        <!-- End Of Right Section -->
+        <!-- Start Of Left Section -->
+        <section class="side-blog-section">
+          <div class="side-blog-image">
+            <img
+              src="./assets/side-blog-image.jpg"
+              alt="An image of an aquarium containing a large fish"
+            />
+          </div>
+          <div class="side-blog-content">
+            <h4>ABOUT UNDER THE SEA</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis
+              perspiciatis deserunt accusamus!
+            </p>
+            <h4>RECENT POSTS</h4>
+            <ul>
+              <li>Lorem, ipsum dolor.</li>
+              <li>Lorem, ipsum dolor.</li>
+              <li>Lorem, ipsum dolor.</li>
+              <li>Lorem, ipsum dolor.</li>
+            </ul>
+          </div>
+        </section>
+        <!-- End Of left Section -->
       </div>
+      <!--Start Of Comments Section -->
       <section class="comments-container">
         <div class="wrapper">
           <h3>Comments:</h3>
@@ -141,11 +150,20 @@
           </div>
         </div>
       </section>
-      <section class="contact-section">
+      <!--End Of Comments Section -->
+
+      <!--Start Of Contact Section -->
+      <section class="contact-section wrapper">
         <form action="#" method="#" class="blog-contact-form" name="myForm">
           <div class="name-form">
             <label for="name" class="sr-only"></label>
-            <input type="text" id="sr-only" name="name" placeholder="Name" />
+            <input
+              type="text"
+              id="sr-only"
+              name="name"
+              placeholder="Name"
+              class="blog-name"
+            />
           </div>
           <div class="email-form">
             <label for="userEmail" class="sr-only"></label>
@@ -154,25 +172,31 @@
               id="sr-only"
               name="emailAddress"
               placeholder="Email address"
+              class="blog-email"
             />
           </div>
-          <div class="message-form">
+          <div class="blog-message-form">
             <label for="feedback" class="sr-only"></label>
             <textarea
               name="userFeedback"
               id="sr-only"
               name="feedback"
               placeholder="Message"
+              class="blog-textarea"
             ></textarea>
           </div>
-          <div class="submit-form">
+          <div class="blog-submit-form">
             <button type="submit">Submit</button>
           </div>
         </form>
       </section>
+      <!--End Of Contact Section -->
+      <!--Start Of Footer -->
+
       <footer>
         <p>Copyright © 2021 Juno College</p>
       </footer>
+      <!--Start Of Footer -->
     </main>
   </body>
 </html>
