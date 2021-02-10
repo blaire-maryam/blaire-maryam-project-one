@@ -107,6 +107,10 @@ body {
 .blog-page {
   background-image: url(../assets/blog-header.jpg);
   display: flex;
+
+  @media(max-width: 1300px){
+    height: 65vh;
+  }
 }
 
 .contact-page {

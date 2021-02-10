@@ -45,7 +45,7 @@ header {
 }
 
 
-form {
+.message-container form {
   background-color: #0f614e;
   font-size: 2rem;
   font-family: 'Barlow', sans-serif;
@@ -65,7 +65,7 @@ form {
   }
 }
 
-input {
+.message-container input {
   border-top-style: hidden;
   border-right-style: hidden;
   border-left-style: hidden;
@@ -122,7 +122,7 @@ input[type='email'] {
     padding: 10 0;
   }
 }
-textarea[name='userFeedback'] {
+.contact-message-form textarea[name='userFeedback'] {
   color: white;
   font-size: 2rem;
   font-family: 'Barlow', sans-serif;
@@ -142,7 +142,7 @@ textarea[name='userFeedback'] {
   }
   
 }
-textarea {
+.contact-message-form textarea {
   resize: none;
   width: calc(62rem + 40px);
   height: 250px;
