@@ -1,213 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Font Awesome -->
-    <script
-      src="https://kit.fontawesome.com/9a33cd6447.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Google font -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Barlow:wght@700&family=Lato&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Styles Sheet -->
-    <link rel="stylesheet" href="./styles/style.css" />
-    <title>BLOG</title>
-  </head>
-  <body>
-    <!-- Blog Header Page -->
-    <header class="blog-page">
-      <!-- Navigation of site -->
-      <div class="nav-burger-menu">
-        <i class="fas fa-bars"></i>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">ABOUT</a></li>
-          <li><a href="#">BLOG</a></li>
-          <li><a href="#">CONTACT</a></li>
-        </ul>
-      </nav>
-      <!--End Of Navigation site -->
-    </header>
-    <!--End Of Blog Header page -->
-    <main>
-      <div class="blog-page-container">
-        <!-- RIGHT SECTION -->
-        <section class="blog-post-section">
-          <div class="right-side">
-            <h2>BLOG</h2>
-            <img
-              src="./assets/blog-post-image.jpg"
-              alt="An image of a School of
-            fish undersea"
-              class="right-side-image"
-            />
-          </div>
-          <div class="discovery-section">
-            <h3>DISCOVERING NEW SPECIES</h3>
-            <p>Monday May, 2019 by Dieula</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-              odit assumenda corrupti culpa libero nemo voluptate iusto tempore
-              enim at? Dignissimos cum maxime ratione eaque cumque enim quae ex
-              explicabo. A commodi aspernatur eum reprehenderit dicta quia
-              inventore voluptate saepe, numquam, laborum voluptatum voluptas?
-              Asperiores, pariatur? Eius voluptatem voluptates temporibus
-              assumenda non ipsa excepturi tenetur asperiores nulla ducimus,
-              laborum, vitae, maxime sunt explicabo pariatur! Ipsa eligendi
-              nihil optio mollitia sunt aspernatur consectetur recusandae magni
-              impedit ipsum, delectus quaerat aut? Officiis placeat sint cumque
-              vel! Provident dolores reiciendis, dolorum vero consectetur, ipsa
-              neque fugit nostrum eius dicta, ullam laborum corrupti debitis.
-              Expedita rerum fugit veniam tenetur, modi doloribus voluptatem
-              inventore vero, illum atque eaque ab similique explicabo
-              cupiditate laborum saepe quas sequi? Perspiciatis assumenda
-              aperiam eius, facere esse placeat recusandae maiores iure culpa
-              corrupti est? Delectus ab aliquid aspernatur nemo enim, animi
-              dolores quod quia excepturi. Odio sint perferendis modi vero
-              adipisci. Provident voluptatum sapiente dignissimos totam officia,
-              animi voluptates sint magni iste ipsa quidem, ea facilis
-              exercitationem commodi blanditiis quaerat sequi est nisi
-              accusantium ipsum doloribus harum quae! Impedit fugiat provident
-              ullam commodi eum incidunt, aperiam iure, pariatur nesciunt
-              adipisci quod itaque sed ratione magni officiis inventore ipsum?
-              Veritatis, aliquam!
-            </p>
-          </div>
-        </section>
-        <!-- End Of Right Section -->
-        <!-- Start Of Left Section -->
-        <section class="side-blog-section">
-          <div class="side-blog-image">
-            <img
-              src="./assets/side-blog-image.jpg"
-              alt="An image of an aquarium containing a large fish"
-            />
-          </div>
-          <div class="side-blog-content">
-            <h4>ABOUT UNDER THE SEA</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis
-              perspiciatis deserunt accusamus!
-            </p>
-            <h4>RECENT POSTS</h4>
-            <ul>
-              <li>Lorem, ipsum dolor.</li>
-              <li>Lorem, ipsum dolor.</li>
-              <li>Lorem, ipsum dolor.</li>
-              <li>Lorem, ipsum dolor.</li>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/9a33cd6447.js" crossorigin="anonymous"></script>
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@700&family=Lato&display=swap" rel="stylesheet" />
+  <!-- Styles Sheet -->
+  <link rel="stylesheet" href="./styles/style.css" />
+  <title>BLOG</title>
+</head>
+
+<body>
+  <!-- Blog Header Page -->
+  <header class="blog-page">
+    <nav class="dropdown-container">
+      <div class="hamburger-menu">
+        <ul class="dropdown-menu">
+          <li><a href=""><i class="fas fa-bars"></i></a>
+            <ul class="sub-menu">
+              <li><a href="./index.html"></a>Home</li>
+              <li><a href="#about"></a>About</li>
+              <li><a href="./blog.html"></a>Blog</li>
+              <li><a href="./contact.html"></a>Contact</li>
             </ul>
-          </div>
-        </section>
-        <!-- End Of left Section -->
+          </li>
+        </ul>
       </div>
-      <!--Start Of Comments Section -->
-      <section class="comments-container">
-        <div class="wrapper">
-          <h3>Comments:</h3>
-          <div class="comments-title">
-            <div class="profile-picture">
-              <img
-                src="./assets/comment-1.jpg"
-                alt="Profile picture with a pink background of a person named Jeremy"
-              />
-            </div>
-            <div class="comment-content">
-              <div class="comments one">
-                <p>
-                  <time datetime="2018-10-09 20:00"
-                    >Tuesday October 9th, 2018</time
-                  >
-                  by Jeremy
-                </p>
-                <p>
-                  Fusce vehicle donor arch, sit amet blandit dolor mollis nec.
-                  Donec viverra eleifend lacus, vitae ullamcorper menus. Sed
-                  sollicitudin ipsum quis nunc pollicitundin ultrices. Donec
-                  euismod scelerisque ligula. Maecenas eu varius risus, eu
-                  aliquet arcu.
-                </p>
-              </div>
-            </div>
+      <ul>
+        <li><a href="#home"></a>Home</li>
+        <li><a href="#about"></a>About</li>
+        <li><a href="#blog"></a>Blog</li>
+        <li><a href="#contact"></a>Contact</li>
+      </ul>
+    </nav>
+  </header>
+  <!--End Of Blog Header page -->
+  <main>
+    <div class="blog-page-container">
+      <!-- RIGHT SECTION -->
+      <section class="blog-post-section">
+        <div class="right-side">
+          <h2>BLOG</h2>
+          <img src="./assets/blog-post-image.jpg" alt="An image of a School of
+            fish undersea" class="right-side-image" />
+        </div>
+        <div class="discovery-section">
+          <h3>DISCOVERING NEW SPECIES</h3>
+          <p>Monday May, 2019 by Dieula</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+            odit assumenda corrupti culpa libero nemo voluptate iusto tempore
+            enim at? Dignissimos cum maxime ratione eaque cumque enim quae ex
+            explicabo. A commodi aspernatur eum reprehenderit dicta quia
+            inventore voluptate saepe, numquam, laborum voluptatum voluptas?
+            Asperiores, pariatur? Eius voluptatem voluptates temporibus
+            assumenda non ipsa excepturi tenetur asperiores nulla ducimus,
+            laborum, vitae, maxime sunt explicabo pariatur! Ipsa eligendi
+            nihil optio mollitia sunt aspernatur consectetur recusandae magni
+            impedit ipsum, delectus quaerat aut? Officiis placeat sint cumque
+            vel! Provident dolores reiciendis, dolorum vero consectetur, ipsa
+            neque fugit nostrum eius dicta, ullam laborum corrupti debitis.
+            Expedita rerum fugit veniam tenetur, modi doloribus voluptatem
+            inventore vero, illum atque eaque ab similique explicabo
+            cupiditate laborum saepe quas sequi? Perspiciatis assumenda
+            aperiam eius, facere esse placeat recusandae maiores iure culpa
+            corrupti est? Delectus ab aliquid aspernatur nemo enim, animi
+            dolores quod quia excepturi. Odio sint perferendis modi vero
+            adipisci. Provident voluptatum sapiente dignissimos totam officia,
+            animi voluptates sint magni iste ipsa quidem, ea facilis
+            exercitationem commodi blanditiis quaerat sequi est nisi
+            accusantium ipsum doloribus harum quae! Impedit fugiat provident
+            ullam commodi eum incidunt, aperiam iure, pariatur nesciunt
+            adipisci quod itaque sed ratione magni officiis inventore ipsum?
+            Veritatis, aliquam!
+          </p>
+        </div>
+      </section>
+      <!-- End Of Right Section -->
+      <!-- Start Of Left Section -->
+      <section class="side-blog-section">
+        <div class="side-blog-image">
+          <img src="./assets/side-blog-image.jpg" alt="An image of an aquarium containing a large fish" />
+        </div>
+        <div class="side-blog-content">
+          <h4>ABOUT UNDER THE SEA</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis
+            perspiciatis deserunt accusamus!
+          </p>
+          <h4>RECENT POSTS</h4>
+          <ul>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem, ipsum dolor.</li>
+          </ul>
+        </div>
+      </section>
+      <!-- End Of left Section -->
+    </div>
+    <!--Start Of Comments Section -->
+    <section class="comments-container">
+      <div class="wrapper">
+        <h3>Comments:</h3>
+        <div class="comments-title">
+          <div class="profile-picture">
+            <img src="./assets/comment-1.jpg" alt="Profile picture with a pink background of a person named Jeremy" />
           </div>
-          <div class="comments-title">
-            <div class="profile-picture">
-              <img
-                src="./assets/comment-2.jpg"
-                alt="Profile picture with an orange background of a person named Julia"
-              />
-            </div>
-            <div class="comment-content">
-              <div class="comments two">
-                <p>
-                  <time datetime="2018-10-09 20:00"
-                    >Wednesday October 10th, 2018</time
-                  >
-                  by Julia
-                </p>
-                <p>
-                  Donec viverra eleifend lacus, vitae ullamcorper metus. Sed
-                  sollicitudin ipsum quis nunc sollicitudin ultrices. Donec
-                  euismod scelerisque ligula. Maecenas eu varius risus, eu
-                  aliquet arcu.
-                </p>
-              </div>
+          <div class="comment-content">
+            <div class="comments one">
+              <p>
+                <time datetime="2018-10-09 20:00">Tuesday October 9th, 2018</time>
+                by Jeremy
+              </p>
+              <p>
+                Fusce vehicle donor arch, sit amet blandit dolor mollis nec.
+                Donec viverra eleifend lacus, vitae ullamcorper menus. Sed
+                sollicitudin ipsum quis nunc pollicitundin ultrices. Donec
+                euismod scelerisque ligula. Maecenas eu varius risus, eu
+                aliquet arcu.
+              </p>
             </div>
           </div>
         </div>
-      </section>
-      <!--End Of Comments Section -->
+        <div class="comments-title">
+          <div class="profile-picture">
+            <img src="./assets/comment-2.jpg" alt="Profile picture with an orange background of a person named Julia" />
+          </div>
+          <div class="comment-content">
+            <div class="comments two">
+              <p>
+                <time datetime="2018-10-09 20:00">Wednesday October 10th, 2018</time>
+                by Julia
+              </p>
+              <p>
+                Donec viverra eleifend lacus, vitae ullamcorper metus. Sed
+                sollicitudin ipsum quis nunc sollicitudin ultrices. Donec
+                euismod scelerisque ligula. Maecenas eu varius risus, eu
+                aliquet arcu.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End Of Comments Section -->
 
-      <!--Start Of Contact Section -->
-      <section class="contact-section wrapper">
-        <form action="#" method="#" class="blog-contact-form" name="myForm">
-          <div class="name-form">
-            <label for="name" class="sr-only"></label>
-            <input
-              type="text"
-              id="sr-only"
-              name="name"
-              placeholder="Name"
-              class="blog-name"
-            />
-          </div>
-          <div class="email-form">
-            <label for="userEmail" class="sr-only"></label>
-            <input
-              type="email"
-              id="sr-only"
-              name="emailAddress"
-              placeholder="Email address"
-              class="blog-email"
-            />
-          </div>
-          <div class="blog-message-form">
-            <label for="feedback" class="sr-only"></label>
-            <textarea
-              name="userFeedback"
-              id="sr-only"
-              name="feedback"
-              placeholder="Message"
-              class="blog-textarea"
-            ></textarea>
-          </div>
-          <div class="blog-submit-form">
-            <button type="submit">Submit</button>
-          </div>
-        </form>
-      </section>
-      <!--End Of Contact Section -->
-      <!--Start Of Footer -->
+    <!--Start Of Contact Section -->
+    <section class="contact-section wrapper">
+      <form action="#" method="#" class="blog-contact-form" name="myForm">
+        <div class="name-form">
+          <label for="name" class="sr-only"></label>
+          <input type="text" id="sr-only" name="name" placeholder="Name" class="blog-name" />
+        </div>
+        <div class="email-form">
+          <label for="userEmail" class="sr-only"></label>
+          <input type="email" id="sr-only" name="emailAddress" placeholder="Email address" class="blog-email" />
+        </div>
+        <div class="blog-message-form">
+          <label for="feedback" class="sr-only"></label>
+          <textarea name="userFeedback" id="sr-only" name="feedback" placeholder="Message"
+            class="blog-textarea"></textarea>
+        </div>
+        <div class="blog-submit-form">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </section>
+    <!--End Of Contact Section -->
+    <!--Start Of Footer -->
 
-      <footer>
-        <p>Copyright © 2021 Juno College</p>
-      </footer>
-      <!--Start Of Footer -->
-    </main>
-  </body>
+    <footer>
+      <p>Copyright © 2021 Juno College</p>
+    </footer>
+    <!--Start Of Footer -->
+  </main>
+</body>
+
 </html>
