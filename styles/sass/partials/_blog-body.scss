@@ -8,6 +8,7 @@ body {
   flex-direction: row-reverse;
   @media (max-width: 950px) {
     flex-direction: column;
+    
   }
 }
 
@@ -31,6 +32,7 @@ body {
       width: 100%;
       max-width: 600px;
       margin: 0 auto;
+      
       // margin-top: 100px;
     }
   }
@@ -61,6 +63,11 @@ body {
       margin-top: 50px;
       margin-left: 10%;
     }
+    @include tabletMQ {
+      max-width: 100%;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
   }
 }
 .discovery-section h3 {
@@ -70,6 +77,9 @@ body {
     font-size: 4rem;
     margin-top: 0;
   }
+  @include mobiletMQ {
+    font-size: 3rem;
+  }
 }
 
 .discovery-section p {
@@ -78,6 +88,11 @@ body {
   @media(max-width: 950px) {
     font-size: 1.7rem;
     margin-top: 0;
+  }
+
+  @include tabletMQ {
+    font-size: 1.7rem;
+    max-width: 80%;
   }
 }
 
@@ -94,9 +109,11 @@ body {
   margin-top: 110px;
   position: relative;
   width: 100%;
-  @include mobiletMQ {
-    max-width: 700px;
+  @media(max-width: 950px) {
+    display: block;
+    max-width: 100%;
     width: 100%;
+    margin-right: 0;
   }
 }
 
@@ -108,10 +125,9 @@ body {
   width: 100%;
   max-width: 100%;
   z-index: 1;
-  @include mobiletMQ {
-    top: 0;
-    right: 12%;
-    max-width: 500px;
+
+  @media(max-width:950px) {
+    margin-top: 10px;
   }
 }
 .side-blog-image img {
@@ -121,19 +137,35 @@ body {
   @media(max-width: 1300px){
     max-width: 420px;
   }
+   @media(max-width:950px) {
+      margin: 0 auto;
+      max-width: 600px;
+      box-shadow: -20px 20px $accentColor;
+   }
 }
 
 .side-blog-content {
   padding: 400px 0 30px 25px;
   background-color: $secondaryColor;
   margin-left: 30px;
+
+  @media(max-width:950px) {
+      margin-left: 0;
+      padding: 0 auto;
+      text-align: center;
+   }
+
   @include mobiletMQ {
-    margin-top: 150px;
+    // margin-top: 150px;
   }
 }
 
 .side-blog-content h4 {
   font-size: 2.2rem;
+
+  @media(max-width:950px) {
+      font-size: 3rem;
+   }
 }
 
 h4:last-of-type {
@@ -144,16 +176,30 @@ h4:last-of-type {
     content:"•";
     font-size:10px;
     padding-right: 20px;
+
+    @media(max-width:950px) {
+      padding: 0 auto;
+      
+   }
 }
 
 
 .side-blog-content p {
   font-size: 1.8rem;
   max-width: 300px;
+  
+  @media(max-width:950px) {
+      max-width: 100%;
+      margin-left: 0;
+      padding: 0 50px;
+   }
 }
 
 .side-blog-content ul li {
   margin-left: 10px;
+  @media(max-width:950px) {
+      margin: 0;
+   }
 }
 
 // COMMENTS SECTION
@@ -163,6 +209,10 @@ h4:last-of-type {
   width: 100%;
   margin-left: auto;
   margin-right: 100px;
+
+  @include tabletMQ {
+    margin-right: 0;
+  }
 
   .comments-title {
     display: flex;
@@ -212,10 +262,14 @@ h4:last-of-type {
     margin-left: 25%;
 
     @include tabletMQ {
-      width: 100%;
+      max-width: 100%;
       margin-left: 23%;
       margin-right: 0;
+      height: 60vh;
     }
+    @include mobiletMQ {
+      height: 70vh;
+  }
   }
 
   .myForm2 {
@@ -227,6 +281,10 @@ h4:last-of-type {
 
     @include tabletMQ {
       max-width: 100%;
+    }
+
+    @include mobiletMQ{
+
     }
   }
 
@@ -242,16 +300,25 @@ h4:last-of-type {
 
    @media(max-width: 1255px){
     max-width: 24rem;
+  }
 
-    @include tabletMQ {
+  @include tabletMQ {
       max-width: 60rem;
     }
+    @include smallMQ {
+    max-width: 30rem;
   }
 }
 
 .myForm2 input[type='text'] {
   @include tabletMQ {
     width: 50rem;
+  }
+   @include mobiletMQ {
+    width: 40rem;
+  }
+   @include smallMQ {
+    width: 30rem;
   }
 }
 
@@ -260,6 +327,12 @@ h4:last-of-type {
 
   @include tabletMQ {
     margin-left: 0px;
+  }
+  @include mobiletMQ {
+    width: 40rem;
+  }
+   @include smallMQ {
+    width: 30rem;
   }
 }
 
@@ -273,18 +346,24 @@ h4:last-of-type {
   margin: 30px 0 0 0px;
   font-family: $fontLato;
 }
-
 .blog-message-form textarea {
   resize: none;
   width: 68rem;
   height: 250px;
 
    @media(max-width: 1255px){
-    max-width: 53rem;
+    width: 53rem;
   }
 
    @include tabletMQ {
     width: 50rem;
+    height: 200px;
+  }
+  @include mobiletMQ {
+    width: 40rem;
+  }
+   @include smallMQ {
+    width: 30rem;
   }
 }
 
@@ -297,10 +376,17 @@ h4:last-of-type {
     text-transform: uppercase;
     // margin-left: 50px;
      @media(max-width: 1255px){
-    max-width: 53rem;
+    width: 53rem;
   }
    @include tabletMQ {
     width: 50rem;
+  }
+  @include mobiletMQ {
+    width: 40rem;
+  }
+
+  @include smallMQ {
+    width: 30rem;
   }
   }
 }

@@ -116,3 +116,20 @@ body {
 .contact-page {
   background-image: url(../assets/contact-header.jpg);
 }
+
+.skip-link {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  background: $primaryColor;
+  color: white;
+}
+
+.skip-link:focus {
+  font-size: 2.5rem;
+  top: 10px;
+  left: 0;
+  padding: 10px;
+  box-shadow: 7px 7px $accentColor;
+}
