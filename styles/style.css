@@ -9,12 +9,6 @@ body {
   }
 }
 
-@media (max-width: 768px) {
-  body {
-    background: red;
-  }
-}
-
 a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
   margin: 0;
   padding: 0;
@@ -316,6 +310,7 @@ header .overlay {
   height: inherit;
   padding-left: 10px;
   height: 100vh;
+  width: 100%;
 }
 
 @media (max-width: 768px) {
@@ -485,7 +480,8 @@ nav a {
   padding: 10px;
 }
 
-nav a:focus {
+nav a:focus,
+nav a:hover {
   color: #86e0f9;
 }
 
@@ -557,7 +553,7 @@ nav .dropdown-menu li:focus-within .sub-menu {
 }
 
 .sea-section .sea-container {
-  width: 900px;
+  max-width: 900px;
   height: 600px;
   margin: 0 auto;
   padding-top: 40vh;
@@ -582,6 +578,11 @@ nav .dropdown-menu li:focus-within .sub-menu {
   text-align: left;
 }
 
+.sea-section button:hover, .sea-section button:focus {
+  background-color: #0f614e;
+  color: white;
+}
+
 .about-section {
   background-color: #0f614e;
   padding: 10rem 0 4rem 0;
@@ -596,6 +597,11 @@ nav .dropdown-menu li:focus-within .sub-menu {
 .about-section .about-section button {
   background: #0c1423;
   color: #fff;
+}
+
+.about-section .about-section button:hover,
+.about-section .about-section button:focus {
+  color: #86e0f9;
 }
 
 .about-section .about-container {
@@ -950,7 +956,7 @@ body {
 
 @media (max-width: 1100px) {
   .blog-post-section .discovery-section {
-    max-width: 100%;
+    max-width: calc(100% - 40px);
     margin-left: 20px;
     margin-right: 20px;
   }
@@ -1357,6 +1363,12 @@ h4:last-of-type {
   }
 }
 
+.contact-section .blog-submit-form button:hover,
+.contact-section .blog-submit-form button:focus {
+  background-color: #86e0f9;
+  color: #0c1423;
+}
+
 .contact-page {
   position: relative;
 }
@@ -1598,6 +1610,11 @@ input[type='email'] {
     width: 50%;
     margin: 30px 0;
   }
+}
+
+.submit-form button:hover {
+  background-color: #86e0f9;
+  color: #0c1423;
 }
 
 /* *****CONTACT INFO***** */

@@ -9,7 +9,7 @@
   }
 
   .sea-container {
-    width: 900px;
+    max-width: 900px;
     height: 600px;
     margin: 0 auto;
     padding-top: 40vh;
@@ -26,7 +26,15 @@
   .sea-container p {
     text-align: left;
   }
+
+  button{
+    &:hover, &:focus{
+      background-color: $secondaryColor;
+      color: white;
+    }
+  }
 }
+
 
 // About Section
 .about-section {
@@ -40,6 +48,11 @@
     background: $primaryColor;
     color: $baseFontColor;
   }
+  .about-section button:hover,
+  .about-section button:focus {
+    color: $accentColor;
+  }
+
   .about-container {
     display: flex;
     justify-content: space-between;

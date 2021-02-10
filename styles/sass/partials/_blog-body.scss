@@ -64,7 +64,7 @@ body {
       margin-left: 10%;
     }
     @include tabletMQ {
-      max-width: 100%;
+      max-width: calc(100% - 40px);
       margin-left: 20px;
       margin-right: 20px;
     }
@@ -388,5 +388,10 @@ h4:last-of-type {
   @include smallMQ {
     width: 30rem;
   }
+  }
+  .blog-submit-form button:hover,
+  .blog-submit-form button:focus {
+    background-color: #86e0f9;
+    color: #0c1423;
   }
 }
