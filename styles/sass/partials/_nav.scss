@@ -18,16 +18,53 @@ nav {
     color: white;
   }
 
-  .nav-burger-menu i {
-    font-size: 50px;
-  }
-  .nav-burger-menu {
-    padding-top: 20px;
-    padding-left: 20px;
-    visibility: hidden;
+  .hamburger-menu  {
+  position: relative;
+  display: none;
+  color: white;
+  font-size: 3rem;
+  padding-right: 10px;
+  @include mobiletMQ {
+    visibility: visible;
+      display: inline;
 
-    @include mobiletMQ {
-      visibility: visible;
-    }
-  }
+}
+
+
+.dropdown-menu li {
+  float: left;
+  list-style-type: none;
+  position: relative;
+  padding: 12px;
+} 
+
+
+.sub-menu {
+  position: absolute;
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+  .sub-menu li {
+  // font-size: 2rem;
+  float: none;
+  background-color: #0c1423;
+  display: flex;
+}
+
+.dropdown-menu li:hover .sub-menu,
+.dropdown-menu li:focus-within .sub-menu {
+  height: auto;
+  overflow: auto;
+  top: 40px;
+  right: 0px;
+  flex-direction: column;
+  background-color: #0c1423;
+  border-left: 3px solid #86e0f9;
+  border-bottom: 3px solid #86e0f9;
+  z-index: 2;
+}
+}
+
 }

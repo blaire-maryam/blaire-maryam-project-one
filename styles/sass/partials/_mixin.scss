@@ -28,11 +28,12 @@
   }
 }
 
-// body {
-//   font-size: 62.5%;
-//   @include tabletMQ {
-//     background: blue;
-//   }
-//   @include mobiletMQ {
-//     background: red;
-//   }
+body {
+  font-size: 62.5%;
+  @include tabletMQ {
+    background: blue;
+  }
+  @include mobiletMQ {
+    background: red;
+  }
+}
