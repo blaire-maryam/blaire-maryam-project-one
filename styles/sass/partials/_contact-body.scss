@@ -190,7 +190,7 @@ input[type='email'] {
   background-color: #0c1423;
   height: 50vh;
   @media(max-width:1100px) {
-    height: 15vh;
+    height: 40vh;
     text-align: center;
   }
 }
@@ -211,6 +211,9 @@ input[type='email'] {
     margin-top: 55px;
     font-size: 4rem;
   }
+  @include tabletMQ {
+    font-size: 3rem;
+  }
 }
 .address-container a {
   font-size: 2.2rem;
@@ -222,11 +225,18 @@ input[type='email'] {
   @media(max-width:1100px) {
     font-size: 3rem;
   }
+
+  @include tabletMQ {
+    font-size: 2rem;
+  }
 }
 .address-container p {
   font-size: 1.7rem;
   line-height: 29px;
   @media(max-width:1100px) {
     font-size: 2.5rem;
+  }
+  @include tabletMQ{
+    font-size: 1.5rem;
   }
 }

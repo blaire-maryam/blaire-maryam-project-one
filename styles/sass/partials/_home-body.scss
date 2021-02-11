@@ -4,17 +4,16 @@
   height: 100vh;
   text-align: center;
   @include mobiletMQ {
-    height: 50vh;
+    height: 75vh;
     padding: 0;
   }
 
   .sea-container {
     max-width: 900px;
-    height: 600px;
     margin: 0 auto;
-    padding-top: 40vh;
+    padding-top: 45vh;
     @include tabletMQ {
-      margin-top: 300px;
+      margin-top: 120px;
     }
     @include mobiletMQ {
       max-width: 550px;
@@ -23,8 +22,20 @@
       padding: 100px 20px;
     }
   }
+
+  .sea-container h3 {
+    @include mobiletMQ {
+      font-size: 3.2rem;
+    }
+  }
   .sea-container p {
     text-align: left;
+
+    @include tabletMQ {
+      font-size: 1.8rem;
+      max-width: 800px;
+      margin: 0 20px;
+    }
   }
 
   button{
@@ -41,12 +52,14 @@
   background-color: $secondaryColor;
   padding: 10rem 0 4rem 0;
   @include tabletMQ {
+    padding-top: 50px;
     padding-bottom: 3rem;
   }
 
   .about-section button {
     background: $primaryColor;
     color: $baseFontColor;
+
   }
   .about-section button:hover,
   .about-section button:focus {
@@ -70,13 +83,10 @@
     box-shadow: 30px 30px $accentColor;
     position: relative;
     @include tabletMQ {
-      box-shadow: none;
       position: static;
-      margin-left: auto;
-      margin-right: 0;
-      border: 4px solid $accentColor;
-    }
-    @include mobiletMQ {
+      border: 30px solid $accentColor;
+      box-shadow: -30px 30px #0c1423;
+      max-width: 500px;
       width: 80%;
       margin: 0 auto;
     }
@@ -88,18 +98,29 @@
     }
   }
 
+  .left-side {
+    @include tabletMQ {
+       display: flex;
+      flex-wrap: wrap-reverse;
+      text-align: center;
+       justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
   .about-right-image img {
     box-shadow: -30px 30px $accentColor;
     position: relative;
     @include tabletMQ {
-      box-shadow: none;
-      display: block;
-      margin-right: auto;
-      border: 4px solid $accentColor;
-    }
-    @include mobiletMQ {
-      width: 80%;
+      border: 30px solid $accentColor;
+      box-shadow: 30px -30px #0c1423;
+      max-width: 400px;
+      width: 100%;
       margin: 0 auto;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
     }
   }
 
@@ -107,31 +128,41 @@
   .about-right-content {
     max-width: 600px;
     width: 100%;
+    @media(max-width: 1300px){
+      max-width: 400px;
+    }
     @include tabletMQ {
-      max-width: 100%;
-      margin: 0 50px;
+      text-align: center;
+      max-width: 400px;
+      margin: 0 20px;
     }
-    @include mobiletMQ {
-      max-width: 450px;
-      justify-content: center;
-      margin: 0 auto;
-    }
+
   }
 
   .about-left-content {
     text-align: right;
-    @include mobiletMQ {
+    @include tabletMQ {
       padding-top: 25px;
     }
   }
 
   .about-right-content {
     text-align: left;
-    @include mobiletMQ {
-      padding-top: 25px;
+    @include tabletMQ {
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      text-align: left;
+    }
+    }
+     button{
+      &:hover, &:focus{
+      background-color: $primaryColor;
+      color: white;
     }
   }
-}
+  }
+
 
 //Contact Section
 
@@ -139,6 +170,9 @@
   background-color: $primaryColor;
   color: $baseFontColor;
   padding: 15rem 0;
+  @include tabletMQ {
+    padding: 50px 0;
+  }
   .contact-info {
     display: flex;
     flex-wrap: wrap;
@@ -164,9 +198,19 @@
     padding: 0 0 2rem 2rem;
     margin: 0 auto;
     @include tabletMQ {
-      max-width: 800px;
+      max-width: 500px;
+      padding: 0 0 20px 0;
     }
   }
+    i {
+      &:hover, &:focus{
+      background-color: $secondaryColor;
+      color: white;
+    }
+}
+  .contact-content h4{
+      font-size: 3rem;
+    }
 }
 
 // Whale section
@@ -181,10 +225,13 @@
 
 .this-month {
   background-color: $primaryColor;
-  height: 60vh;
+  height: 67vh;
   padding-top: 5rem;
   @include mobiletMQ {
-    height: 50vh;
+    height: 70vh;
+  }
+  @include smallMQ {
+    height: 80vh;
   }
 
   .month-container {
@@ -195,22 +242,47 @@
   .month-image img {
     box-shadow: 30px 30px $accentColor;
     width: 100%;
-    @include tabletMQ {
+    @media (max-width: 1280px) {
       display: none;
     }
   }
   .month-content {
     max-width: 800px;
+
+    @media (max-width: 1280px) {
+      margin: 0 auto;
+    }
+  }
+  .month-content h5{
+    @include elementSize($fontBarlow, 32px, 1px);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    @include mobiletMQ {
+    font-size:3rem;
+  }
+  }
+    button{
+      &:hover, &:focus{
+      background-color: $secondaryColor;
+      color: white;
+    }
   }
 }
 
 .home-images {
   background-color: $secondaryColor;
-  height: 60vh;
+  height: 70vh;
   padding: 5rem 0;
+  @include tabletMQ {
+    height: 75vh;
+  }
+
   @include mobiletMQ {
-    height: 40vh;
+    height: 60vh;
     padding: 4rem 0;
+  }
+  @include smallMQ {
+    height: 40vh;
   }
 
   .fish-section {
@@ -219,8 +291,9 @@
   }
 
   .fish-section img {
-    max-width: 800px;
     width: 400px;
+    padding: 0 10px;
+    max-width: 100%;
     @include mobiletMQ {
       max-width: 90%;
     }
@@ -233,7 +306,6 @@
 }
 
 footer {
-  margin-top: 200px;
   background: $accentColor;
   color: #0c1423;
   text-align: center;

@@ -256,7 +256,7 @@ h4:last-of-type {
 .contact-section {
   max-width: 61%;
   margin-right: 10px;
-  height: 45vh;
+  height: 60vh;
 
   @media(max-width: 1255px){
     margin-left: 25%;
@@ -265,11 +265,8 @@ h4:last-of-type {
       max-width: 100%;
       margin-left: 23%;
       margin-right: 0;
-      height: 60vh;
+      height: 95vh;
     }
-    @include mobiletMQ {
-      height: 70vh;
-  }
   }
 
   .myForm2 {
